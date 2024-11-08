@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Como usar JQuery</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div><h1>Lista de Nomes</h1></div>
+    <div>
+        <ul style="font-size: 35px">
+            <li>Maria</li>
+            <li>Marcia</li>
+            <li>Pietro</li>
+            <li>Marcos</li>
+            <li>Aline</li>
+            <li>Adrina</li>
+        </ul>
+    </div>
+    <div>
+    <button id="btn">Clique Aqui.</button>
+    </div>
+    <script>
+        // $('h1').fadeOut("2000"). //desaparecer
+       // $('h1').fadeOut("2000").fadeIn("2000") //desaparecer e aparecer 
+        //$('li').remove() //remove li
+       // $('h1').append(" de pessoas")
+       //$('#btn').on("click",botao) //ao clicar no botão a lista ficará azul
+       //function botao(){
+        //$('li').css({'color':'blue'})
+       //}
+       $('#btn').on("click",botao)
+       function botao(){
+        $('h1').remove()
+       }
+    </script>
+</body>
+</html>
